@@ -1,0 +1,480 @@
+{
+    "homepage": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Simulez votre crédit à la consommation en ligne et obtenez une réponse de principe sous 24h. Prêt auto, travaux, rachat de crédits, prêt personnel : comparez nos offres en 2 minutes."
+            },
+            { "name": "author", "content": "{{ APP_NAME }}" },
+            {
+                "name": "keywords",
+                "content": "simulation crédit, crédit consommation, prêt auto, prêt travaux, rachat de crédits, simulateur de prêt en ligne"
+            },
+            {
+                "name": "google-site-verification",
+                "content": "{{ GOOGLE_SITE_VERIFICATION }}"
+            },
+            {
+                "name": "msvalidate.01",
+                "content": "{{ BING_SITE_VERIFICATION }}"
+            },
+            { "name": "theme-color", "content": "{{ THEME_COLOR }}" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Simulateur de Crédit en Ligne — Réponse sous 24h",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Simulez votre crédit à la consommation et obtenez une réponse de principe rapide, sans engagement.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            },
+            {
+                "property": "og:image",
+                "content": "/images/og/homepage.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "twitter": [
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image",
+                "is_url": false
+            },
+            {
+                "name": "twitter:title",
+                "content": "Simulateur de Crédit en Ligne — Réponse sous 24h",
+                "is_url": false
+            },
+            {
+                "name": "twitter:description",
+                "content": "Simulez votre crédit à la consommation et obtenez une réponse de principe rapide, sans engagement.",
+                "is_url": false
+            },
+            {
+                "name": "twitter:image",
+                "content": "/images/og/homepage.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "mentions_legales": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Mentions légales, politique de confidentialité RGPD et informations réglementaires relatives à nos offres de crédit à la consommation."
+            },
+            { "name": "robots", "content": "index, follow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Mentions Légales & Politique de Confidentialité",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Informations légales, RGPD et réglementaires sur nos services de crédit.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            }
+        ],
+        "twitter": [
+            { "name": "twitter:card", "content": "summary", "is_url": false },
+            {
+                "name": "twitter:title",
+                "content": "Mentions Légales & Politique de Confidentialité",
+                "is_url": false
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "tunnel_step1": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Démarrez votre simulation de crédit à la consommation en ligne. Renseignez votre projet, obtenez une estimation immédiate de mensualité et TAEG."
+            },
+            { "name": "robots", "content": "index, follow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Simulation de Crédit Consommation — Démarrer ma demande",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Renseignez votre projet et obtenez une simulation immédiate de votre crédit à la consommation.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            }
+        ],
+        "twitter": [
+            { "name": "twitter:card", "content": "summary", "is_url": false },
+            {
+                "name": "twitter:title",
+                "content": "Simulation de Crédit Consommation",
+                "is_url": false
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "tunnel_resultat": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Votre demande de crédit à la consommation a bien été prise en compte. Découvrez les prochaines étapes de votre dossier."
+            },
+            { "name": "robots", "content": "noindex, nofollow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Votre demande a bien été enregistrée",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Votre dossier de crédit est en cours d'étude. Réponse de principe sous 24h.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false }
+        ],
+        "twitter": [
+            { "name": "twitter:card", "content": "summary", "is_url": false },
+            {
+                "name": "twitter:title",
+                "content": "Votre demande a bien été enregistrée",
+                "is_url": false
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "produit_auto_moto": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Simulez votre prêt auto ou moto en ligne : mensualités adaptées, TAEG fixe, réponse de principe sous 24h. Financez votre véhicule neuf ou d'occasion."
+            },
+            {
+                "name": "keywords",
+                "content": "prêt auto, crédit moto, financement véhicule, simulation prêt auto"
+            },
+            { "name": "robots", "content": "index, follow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Prêt Auto & Moto — Simulez votre crédit véhicule",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Financez votre auto ou moto avec un crédit à la consommation adapté à votre budget.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            },
+            {
+                "property": "og:image",
+                "content": "/images/og/pret-auto-moto.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "twitter": [
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image",
+                "is_url": false
+            },
+            {
+                "name": "twitter:title",
+                "content": "Prêt Auto & Moto — Simulez votre crédit véhicule",
+                "is_url": false
+            },
+            {
+                "name": "twitter:image",
+                "content": "/images/og/pret-auto-moto.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "produit_regroupement_credits": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Regroupez vos crédits en une seule mensualité et réduisez vos charges. Simulation gratuite et sans engagement de votre rachat de crédits."
+            },
+            {
+                "name": "keywords",
+                "content": "rachat de crédits, regroupement de crédits, simulation rachat de crédit"
+            },
+            { "name": "robots", "content": "index, follow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Rachat de Crédits — Simplifiez vos remboursements",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Regroupez l'ensemble de vos crédits en une mensualité unique et allégez votre budget.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            },
+            {
+                "property": "og:image",
+                "content": "/images/og/rachat-de-credits.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "twitter": [
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image",
+                "is_url": false
+            },
+            {
+                "name": "twitter:title",
+                "content": "Rachat de Crédits — Simplifiez vos remboursements",
+                "is_url": false
+            },
+            {
+                "name": "twitter:image",
+                "content": "/images/og/rachat-de-credits.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "produit_travaux": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Financez vos travaux de rénovation ou d'aménagement avec un crédit travaux flexible. Simulation immédiate de votre mensualité."
+            },
+            {
+                "name": "keywords",
+                "content": "prêt travaux, crédit rénovation, financement travaux maison"
+            },
+            { "name": "robots", "content": "index, follow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Prêt Travaux — Financez vos projets de rénovation",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Un crédit dédié pour financer vos travaux d'aménagement ou de rénovation.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            },
+            {
+                "property": "og:image",
+                "content": "/images/og/pret-travaux.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "twitter": [
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image",
+                "is_url": false
+            },
+            {
+                "name": "twitter:title",
+                "content": "Prêt Travaux — Financez vos projets de rénovation",
+                "is_url": false
+            },
+            {
+                "name": "twitter:image",
+                "content": "/images/og/pret-travaux.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "produit_personnel": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Un projet personnel à financer ? Simulez votre prêt personnel en ligne, sans justificatif d'achat, avec une réponse rapide."
+            },
+            {
+                "name": "keywords",
+                "content": "prêt personnel, crédit personnel, financement libre"
+            },
+            { "name": "robots", "content": "index, follow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Prêt Personnel — Financez librement votre projet",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Un crédit personnel sans justificatif pour financer le projet de votre choix.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            },
+            {
+                "property": "og:image",
+                "content": "/images/og/pret-personnel.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "twitter": [
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image",
+                "is_url": false
+            },
+            {
+                "name": "twitter:title",
+                "content": "Prêt Personnel — Financez librement votre projet",
+                "is_url": false
+            },
+            {
+                "name": "twitter:image",
+                "content": "/images/og/pret-personnel.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    },
+
+    "produit_famille_loisirs": {
+        "meta": [
+            {
+                "name": "description",
+                "content": "Vacances, mariage, événement familial : financez vos projets loisirs avec un crédit adapté et une simulation immédiate."
+            },
+            {
+                "name": "keywords",
+                "content": "prêt loisirs, crédit vacances, financement mariage, crédit famille"
+            },
+            { "name": "robots", "content": "index, follow" }
+        ],
+        "og": [
+            { "property": "og:type", "content": "website", "is_url": false },
+            {
+                "property": "og:title",
+                "content": "Prêt Famille & Loisirs — Financez vos projets du quotidien",
+                "is_url": false
+            },
+            {
+                "property": "og:description",
+                "content": "Un crédit dédié à vos projets familiaux et loisirs : vacances, mariage, événements.",
+                "is_url": false
+            },
+            { "property": "og:locale", "content": "fr_FR", "is_url": false },
+            {
+                "property": "og:url",
+                "content": "",
+                "is_url": true,
+                "url_type": "current"
+            },
+            {
+                "property": "og:image",
+                "content": "/images/og/pret-famille-loisirs.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "twitter": [
+            {
+                "name": "twitter:card",
+                "content": "summary_large_image",
+                "is_url": false
+            },
+            {
+                "name": "twitter:title",
+                "content": "Prêt Famille & Loisirs — Financez vos projets du quotidien",
+                "is_url": false
+            },
+            {
+                "name": "twitter:image",
+                "content": "/images/og/pret-famille-loisirs.jpg",
+                "is_url": true,
+                "url_type": "asset"
+            }
+        ],
+        "links": [{ "rel": "canonical", "is_url": true, "url_type": "current" }]
+    }
+}
