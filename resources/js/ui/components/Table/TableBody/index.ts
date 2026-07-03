@@ -1,1 +1,1 @@
-export { TableBody, type TableBodyProps } from "./TableBody";
+export { TableBody, type TableBodyProps } from './TableBody';

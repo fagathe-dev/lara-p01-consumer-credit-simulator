@@ -1,1 +1,1 @@
-export { ErrorLayout, type ErrorLayoutProps } from "./ErrorLayout";
+export { ErrorLayout, type ErrorLayoutProps } from './ErrorLayout';

@@ -1,1 +1,1 @@
-export { Flex, type FlexProps } from "./Flex";
+export { Flex, type FlexProps } from './Flex';

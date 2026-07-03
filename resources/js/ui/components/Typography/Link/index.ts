@@ -1,1 +1,1 @@
-export { Link, type LinkProps, type LinkVariant } from "./Link";
+export { Link, type LinkProps, type LinkVariant } from './Link';

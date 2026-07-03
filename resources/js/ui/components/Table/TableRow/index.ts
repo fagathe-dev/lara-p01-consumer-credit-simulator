@@ -1,1 +1,1 @@
-export { TableRow, type TableRowProps } from "./TableRow";
+export { TableRow, type TableRowProps } from './TableRow';

@@ -11,6 +11,7 @@ return new class extends Migration {
     {
         Schema::create('dossiers', function (Blueprint $table): void {
             $table->id();
+            $table->string('ref')->unique();
 
             // Projet
             $table->string('project_type');
@@ -39,6 +40,8 @@ return new class extends Migration {
             $table->decimal('charge_consumer_credit_monthly', 10, 2)->nullable();
             $table->decimal('charge_consumer_credit_remaining', 10, 2)->nullable();
             $table->decimal('charge_other', 10, 2)->nullable();
+
+            $table->foreignId('user_id')->nullable()->index()->constrained()->onDelete('cascade');
 
             $table->timestamps();
         });

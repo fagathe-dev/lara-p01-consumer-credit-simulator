@@ -1,1 +1,1 @@
-export { Figure, type FigureProps } from "./Figure";
+export { Figure, type FigureProps } from './Figure';

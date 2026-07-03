@@ -5,21 +5,28 @@
  * Vue pure branchée au store : aucune logique de navigation ici.
  */
 
-import React from "react";
+import React, { ReactNode } from "react";
 import { Field, SelectableCard } from "@/ui/components/Forms";
 import { Grid, Stack } from "@/ui/components/Layout";
 import { theme } from "@/ui/theme";
 import { useTunnelStore } from "@/core/tunnel";
 import { products, type ProjectType } from "@/core/products";
 import { useStepErrors } from "./useStepState";
+import {
+    CarIcon,
+    HammerIcon,
+    HeartIcon,
+    RefreshCwIcon,
+    WalletIcon,
+} from "lucide-react";
 
 /** Pictogramme par type de projet (variante `card`). */
-const PROJECT_ICONS: Record<ProjectType, string> = {
-    auto_moto: "🚗",
-    regroupement_credits: "🔄",
-    travaux: "🔨",
-    autre: "💶",
-    famille_loisir: "🎉",
+const PROJECT_ICONS: Record<ProjectType, ReactNode> = {
+    auto_moto: <CarIcon />,
+    regroupement_credits: <RefreshCwIcon />,
+    travaux: <HammerIcon />,
+    autre: <WalletIcon />,
+    famille_loisir: <HeartIcon />,
 };
 
 export const ProjetType: React.FC = () => {

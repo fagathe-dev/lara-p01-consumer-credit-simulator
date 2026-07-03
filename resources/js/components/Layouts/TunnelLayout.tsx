@@ -12,6 +12,8 @@ import styled from "styled-components";
 import { AppLayout } from "@/ui/Layouts";
 import { Flex } from "@/ui/components/Layout";
 import { theme } from "@/ui/theme";
+import logo from "@images/logo.webp";
+import { Image } from "@/ui";
 
 const Brand = styled.span`
     font-family: ${theme.typography.fontFamily.base};
@@ -27,7 +29,14 @@ const SecurityNote = styled.span`
 
 const Header: React.FC = () => (
     <Flex align="center" justify="space-between" gap={4}>
-        <Brand>CréditSimul</Brand>
+        <Brand>
+            <Image
+                src={logo}
+                alt="Logo simulateur de crédit consommation"
+                width={32}
+                height={32}
+            />
+        </Brand>
         <SecurityNote>Demande sécurisée · chiffrée</SecurityNote>
     </Flex>
 );

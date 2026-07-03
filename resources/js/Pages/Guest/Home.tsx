@@ -109,7 +109,7 @@ const Home: React.FC<PageProps> = ({ seo }) => (
                     <Grid columns={3} gap={6}>
                         {products.map((product) => (
                             <ProductLink key={product.type} href={product.href}>
-                                <Card variant="bordered">
+                                <Card themeVariant="secondary">
                                     <Card.Body>
                                         <Stack gap={2}>
                                             <Title as="h3" level={5}>

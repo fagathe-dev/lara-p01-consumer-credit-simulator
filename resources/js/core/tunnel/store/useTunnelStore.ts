@@ -160,8 +160,7 @@ export const useTunnelStore = create<TunnelStore>((set, get) => ({
                 // - né hors de France → champ réaffiché, valeur réinitialisée
                 //   pour forcer un choix explicite.
                 if (field === "birth_country") {
-                    updated.nationality =
-                        value === "france" ? "france" : null;
+                    updated.nationality = value === "france" ? "france" : null;
                 }
                 return updated;
             }),

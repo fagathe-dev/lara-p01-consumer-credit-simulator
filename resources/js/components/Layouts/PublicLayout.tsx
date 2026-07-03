@@ -17,6 +17,8 @@ import { theme } from "@/ui/theme";
 import { TunnelCTA } from "@/components/TunnelCTA";
 import { routes } from "@/routes";
 import { products } from "@/core/products";
+import logo from "@images/logo.webp";
+import { Button, Image } from "@/ui";
 
 const BrandLink = styled(Link)`
     font-family: ${theme.typography.fontFamily.base};
@@ -72,8 +74,17 @@ const LegalReminder = styled.p`
 
 const Header: React.FC = () => (
     <Flex align="center" justify="space-between" gap={4}>
-        <BrandLink href={routes.home}>CréditSimul</BrandLink>
-        <TunnelCTA variant="footer" label="Faire une simulation" />
+        <BrandLink href={routes.home}>
+            <Image
+                src={logo}
+                alt="Logo simulateur de crédit consommation"
+                width={32}
+                height={32}
+            />
+        </BrandLink>
+        <Button variant="primary" as={Link} href={routes.espaceClient.login}>
+            Mon compte
+        </Button>
     </Flex>
 );
 
@@ -102,7 +113,9 @@ const Footer: React.FC = () => (
                     Estimez votre mensualité et déposez votre demande en
                     quelques minutes.
                 </Text>
-                <TunnelCTA variant="footer" label="Démarrer maintenant" />
+                <Button variant="primary" as={Link} href={routes.tunnel}>
+                    Démarrer maintenant
+                </Button>
             </FooterColumn>
         </FooterColumns>
         <LegalReminder>

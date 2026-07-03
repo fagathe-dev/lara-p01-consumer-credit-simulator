@@ -1,6 +1,6 @@
 export {
-    Image,
-    type ImageProps,
-    type ImageRadius,
-    type ImageFit,
-} from "./Image";
+  Image,
+  type ImageProps,
+  type ImageRadius,
+  type ImageFit,
+} from './Image';

@@ -35,7 +35,7 @@ const items: readonly ReassuranceItem[] = [
 export const Reassurance: React.FC = () => (
     <Grid columns={3} gap={6}>
         {items.map((item) => (
-            <Card key={item.title} variant="bordered">
+            <Card key={item.title} themeVariant="primary">
                 <Card.Body>
                     <Stack gap={2}>
                         <Title as="h3" level={5}>

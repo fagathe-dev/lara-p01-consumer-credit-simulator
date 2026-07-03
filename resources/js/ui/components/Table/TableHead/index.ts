@@ -1,1 +1,1 @@
-export { TableHead, type TableHeadProps } from "./TableHead";
+export { TableHead, type TableHeadProps } from './TableHead';

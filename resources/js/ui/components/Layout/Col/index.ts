@@ -1,1 +1,1 @@
-export { Col, type ColProps } from "./Col";
+export { Col, type ColProps } from './Col';

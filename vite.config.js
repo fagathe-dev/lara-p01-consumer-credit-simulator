@@ -16,6 +16,13 @@ export default defineConfig({
         }),
         react(),
     ],
+    // Ajout de la configuration de résolution des alias pour Vite
+    resolve: {
+        alias: {
+            "@": "/resources/js",
+            "@images": "/resources/images",
+        },
+    },
     server: {
         watch: {
             ignored: ["**/storage/framework/views/**"],

@@ -57,7 +57,7 @@ export const Step1Projet: React.FC = () => {
                         <SelectableCard
                             key={product.type}
                             label={product.label}
-                            icon={PROJECT_ICONS[product.type]}
+                            // icon={PROJECT_ICONS[product.type]}
                             selected={dossier.project_type === product.type}
                             onSelect={() =>
                                 setField("project_type", product.type)

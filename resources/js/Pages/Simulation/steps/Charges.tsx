@@ -54,16 +54,11 @@ export const Charges: React.FC = () => {
                                         : Number(event.target.value),
                                 )
                             }
-                            error={
-                                errors["dossier.charge_mortgage_remaining"]
-                            }
+                            error={errors["dossier.charge_mortgage_remaining"]}
                         />
                     )}
 
-                    {isDossierFieldVisible(
-                        "housing_property_value",
-                        state,
-                    ) && (
+                    {isDossierFieldVisible("housing_property_value", state) && (
                         <MoneyInput
                             label="Valeur du bien"
                             value={dossier.housing_property_value ?? ""}
@@ -94,10 +89,7 @@ export const Charges: React.FC = () => {
                 />
             </Field>
 
-            {(isDossierFieldVisible(
-                "charge_consumer_credit_monthly",
-                state,
-            ) ||
+            {(isDossierFieldVisible("charge_consumer_credit_monthly", state) ||
                 isDossierFieldVisible(
                     "charge_consumer_credit_remaining",
                     state,
@@ -109,9 +101,7 @@ export const Charges: React.FC = () => {
                     ) && (
                         <MoneyInput
                             label="Mensualité totale des crédits conso"
-                            value={
-                                dossier.charge_consumer_credit_monthly ?? ""
-                            }
+                            value={dossier.charge_consumer_credit_monthly ?? ""}
                             onChange={(event) =>
                                 setField(
                                     "charge_consumer_credit_monthly",
@@ -121,9 +111,7 @@ export const Charges: React.FC = () => {
                                 )
                             }
                             error={
-                                errors[
-                                    "dossier.charge_consumer_credit_monthly"
-                                ]
+                                errors["dossier.charge_consumer_credit_monthly"]
                             }
                         />
                     )}

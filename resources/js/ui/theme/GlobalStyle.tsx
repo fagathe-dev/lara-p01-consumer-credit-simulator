@@ -3,10 +3,10 @@
  * Minimal CSS reset + base font configuration + focus states
  */
 
-import { createGlobalStyle } from "styled-components";
-import { typography } from "./typography";
-import { semanticColors } from "./colors";
-import { radius } from "./radius";
+import { createGlobalStyle } from 'styled-components';
+import { typography } from './typography';
+import { semanticColors } from './colors';
+import { radius } from './radius';
 
 export const GlobalStyle = createGlobalStyle`
   /* CSS Reset */

@@ -17,7 +17,8 @@
         "jsx": "react-jsx",
         "types": ["vite/client"],
         "paths": {
-            "@/*": ["./resources/js/*"]
+            "@/*": ["./resources/js/*"],
+            "@images/*": ["./resources/images/*"]
         }
     },
     "include": ["resources/js/**/*.ts", "resources/js/**/*.tsx"]
