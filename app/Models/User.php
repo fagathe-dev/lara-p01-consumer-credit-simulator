@@ -8,12 +8,14 @@ use App\Concerns\HasReference;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Storage;
 
-#[Fillable(['first_name', 'last_name', 'email', 'password', 'role', 'ref', 'agent_id'])]
+#[Fillable(['first_name', 'last_name', 'email', 'password', 'role', 'ref', 'agent_id', 'avatar'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable
 {
@@ -56,5 +58,23 @@ class User extends Authenticatable
     public function dossiersCrees(): HasMany
     {
         return $this->hasMany(Dossier::class, 'agent_application_creator_id', 'agent_id');
+    }
+
+    /**
+     * Nom complet affichable.
+     */
+    protected function fullName(): Attribute
+    {
+        return Attribute::get(fn(): string => trim(($this->first_name ?? '') . ' ' . ($this->last_name ?? '')));
+    }
+
+    /**
+     * URL publique de l'avatar (ou null si aucune photo).
+     */
+    protected function avatarUrl(): Attribute
+    {
+        return Attribute::get(
+            fn(): ?string => $this->avatar ? Storage::disk('public')->url($this->avatar) : null,
+        );
     }
 }

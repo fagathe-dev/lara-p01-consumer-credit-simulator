@@ -2,6 +2,8 @@
 
 namespace App\Http\Middleware;
 
+use App\Auth\Security\Guard\AbstractGuard;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -37,7 +39,52 @@ class HandleInertiaRequests extends Middleware
     {
         return [
             ...parent::share($request),
-            //
+            'auth' => fn(): ?array => $this->authContext($request),
+            'flash' => [
+                'status' => fn() => $request->session()->get('status'),
+                'requiresCode' => fn(): bool => (bool) $request->session()->get('requiresCode'),
+                'codeSent' => fn(): bool => (bool) $request->session()->get('codeSent'),
+            ],
+        ];
+    }
+
+    /**
+     * Contexte d'authentification maison exposé aux pages (jamais l'id interne).
+     *
+     * @return array<string, mixed>|null
+     */
+    private function authContext(Request $request): ?array
+    {
+        $context = $request->session()->get(AbstractGuard::SESSION_KEY);
+
+        if (!is_array($context) || !isset($context['role'])) {
+            return null;
+        }
+
+        $userPayload = null;
+        $userRef = $context['user_ref'] ?? null;
+
+        if ($userRef) {
+            $user = User::query()->where('ref', $userRef)->first();
+
+            if ($user instanceof User) {
+                $userPayload = [
+                    'ref' => $user->ref,
+                    'firstName' => $user->first_name,
+                    'lastName' => $user->last_name,
+                    'fullName' => $user->full_name,
+                    'email' => $user->email,
+                    'avatarUrl' => $user->avatar_url,
+                    'role' => $user->role?->value,
+                ];
+            }
+        }
+
+        return [
+            'role' => $context['role'],
+            'dossierRef' => $context['dossier_ref'] ?? null,
+            'email' => $context['email'] ?? null,
+            'user' => $userPayload,
         ];
     }
 }

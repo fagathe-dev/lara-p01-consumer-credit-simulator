@@ -16,7 +16,16 @@ export const routes = {
     familleLoisirs: '/pret-famille-loisirs',
   },
   espaceClient: {
-    login: '/espace-client/login',
-    dashboard: '/espace-client/dashboard',
+    connexion: '/espace-client/connexion',
+    creation: '/espace-client/creation',
+    dashboard: '/espace-client',
+    profil: '/espace-client/profil',
+  },
+  suivi: {
+    connexion: '/suivi-de-dossier/connexion',
+  },
+  bo: {
+    connexion: '/bo/connexion',
+    dashboard: '/bo',
   },
 } as const;

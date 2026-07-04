@@ -47,7 +47,7 @@ final class EnsureRestrictedSessionNotExpired
             $request->session()->invalidate();
             $request->session()->regenerateToken();
 
-            return redirect()->route('login')->with('status', 'Votre session a expiré, veuillez vous reconnecter.');
+            return redirect()->route('suivi.connexion')->with('status', 'Votre session a expiré, veuillez vous reconnecter.');
         }
 
         return $next($request);

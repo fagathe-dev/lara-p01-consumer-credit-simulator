@@ -5,6 +5,7 @@ use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 use Illuminate\Http\Request;
 use App\Http\Middleware\HandleInertiaRequests;
+use App\Http\Middleware\EnsureGuardAccess;
 use App\Http\Middleware\EnsureRestrictedSessionNotExpired;
 use Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets;
 
@@ -21,7 +22,8 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->alias([
-            'restricted.session' => EnsureRestrictedSessionNotExpired::class,
+            'guard.access' => EnsureGuardAccess::class,
+            'restricted.expiry' => EnsureRestrictedSessionNotExpired::class,
         ]);
     })
     ->withMiddleware()

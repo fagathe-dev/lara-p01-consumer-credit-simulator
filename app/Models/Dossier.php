@@ -15,7 +15,6 @@ use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -149,11 +148,10 @@ class Dossier extends Model
     }
 
     /**
-     * Tags CRM associés (pivot dossier_tag sur dossiers.ref).
+     * Offres commerciales rattachées à ce dossier (offers.application_id → dossiers.id).
      */
-    public function tags(): BelongsToMany
+    public function offers(): HasMany
     {
-        return $this->belongsToMany(Tag::class, 'dossier_tag', 'dossier_ref', 'tag_id', 'ref')
-            ->withTimestamps();
+        return $this->hasMany(Offer::class, 'application_id');
     }
 }
